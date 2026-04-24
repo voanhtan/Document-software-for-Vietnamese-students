@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Đơn xin nghỉ học</title>
+		<link href="style.css" type="text/css" rel="stylesheet"/>
+		<script type="text/javascript">
+			function printPage() {
+				window.print();
+			}
+		</script>
+   </head>
+   <body>
+        <p id="tit" style="text-align:center; font-weight:bold">Cộng hòa xã hội chủ nghĩa Việt Nam</p>
+		<p style="text-align:center">Độc lập - Tự do - Hạnh phúc</p>
+		<p style="text-align: center; font-weight:bold; font-size:18pt; background: linear-gradient(90deg, rgb(203, 224, 255) 0%, rgb(122, 175, 255) 100%); border-radius: 16px;">ĐƠN XIN NGHỈ HỌC</p>
+        <label for="loca"><p style="text-align:right"><label for="d"><input id="loca" type="text" oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"' required="" placeholder="Nhập địa điểm"></label>, Thời gian: <input oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"' id="ca" type="datetime-local"></p>
+        <p>Kính gửi: </p>
+        <p>- Ban giám hiệu nhà trường</p>
+        <label><p>- Giáo viên chủ nhiệm lớp: <input type="text" required="" placeholder="Nhập lớp"></p></label>
+        <label><p>Em tên là: <input type="text" required="" placeholder="Nhập tên em" oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"'> Học sinh lớp: <input type="text" required="" placeholder="Nhập lớp"> Trường: <input type="text" required="" placeholder="Nhập trường" oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"'></p></label>
+        <label><p>Em làm đơn xin này để xin phép thầy/cô cho em nghỉ học từ <input oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"' type="date" required="" placeholder="Nhập ngày đầu tiên nghỉ"> đến <input type="date" required="" oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"' placeholder="Nhập ngày đi học lại"></p></label>
+        <label><p>Lý do: Em mắc bệnh <input type="text" placeholder="Ghi bệnh của em" required="" oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"'>, cần đến bệnh viện để chữa trị/cần ở nhà tĩnh dưỡng cho đến khi khỏi bệnh.</p></label>
+        <p>Em xin hứa trong thời gian nghỉ sẽ chép bài, học bài và làm bài tập đầy đủ.</p>
+        <p>Rất mong nhận được sự chấp thuận của quý Thầy/Cô.</p>
+        <p>Em xin chân thành cảm ơn!</p></label>
+        <label><p>Ý kiến phụ huynh: <textarea required="" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' maxlength ="500" placeholder="Phụ huynh trình bày ý kiến (tối đa 500 chữ)"></textarea></p></label>
+        <table class="center" style="border: none">
+			<tr>
+				<th id="r" style="padding-right: 50px"><label><label><p style="text-align:center">Chữ kí học sinh:</p><iframe src="dr.html" width="200" height="100"></iframe></p><input type="text" required="" style="text-align: center;" placeholder="Nhập tên em" oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"'><p style="font-weight: normal"><em>(Ký, ghi rõ họ tên)</em></p></p></label></label></th>
+				<th id="l" style="padding-left: 50px"><label><label><p style="text-align:center">Chữ kí phụ huynh: </p><iframe src="dr.html" width="200" height="100"></iframe></p><input type="text" required="" style="text-align: center;" placeholder="Nhập tên phụ huynh" oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"'><p style="font-weight: normal"><em>(Ký, ghi rõ họ tên)</em></p></p></label></label></th>
+			</tr>
+		</table>
+        <p style="text-align:center"><button onclick="printPage()">Tải xuống (PDF)</button></p>
+        <a href="index.html">
+            <p style="text-align:center"><button>Quay về</button></p>
+        </a>
+   </body>
+</html>

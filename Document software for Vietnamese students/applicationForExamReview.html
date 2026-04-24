@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Đơn xin chấm phúc khảo bài thi</title>
+		<link href="style.css" type="text/css" rel="stylesheet"/>
+		<script type="text/javascript">
+			function printPage() {
+				window.print();
+			}
+		</script>
+   </head>
+   <body>
+        <p id="tit" style="text-align:center; font-weight:bold">Cộng hòa xã hội chủ nghĩa Việt Nam</p>
+		<p style="text-align:center">Độc lập - Tự do - Hạnh phúc</p>
+		<p style="text-align: center; font-weight:bold; font-size:18pt; background: linear-gradient(90deg, rgb(203, 224, 255) 0%, rgb(122, 175, 255) 100%); border-radius: 16px;">ĐƠN XIN CHẤM PHÚC KHẢO BÀI THI</p>
+        <label for="loca"><p style="text-align:right"><label for="d"><input id="loca" oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"' type="text" required="" placeholder="Nhập địa điểm"></label>, Thời gian: <input id="ca" oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"' type="datetime-local"></p>
+        <label><p style="text-align:center">Kính gửi: Khoa <input type="text" required="" oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"' placeholder="Nhập khoa"></p></label>
+        <label><p>Em tên: <input type="text" required="" placeholder="Nhập tên em" oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"'> Sinh ngày: <input type="date" oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"' required="" placeholder="Nhập ngày sinh"></p></label>
+        <label><p>Lớp: <input type="text" required="" placeholder="Nhập lớp"></p></label>
+        <label><p>Mã số học sinh: <input type="number" required="" placeholder="Nhập mã số"> Phòng thi số: <input type="number" required="" placeholder="Nhập số"></p></label>
+        <label><p>Môn dự thi: <input type="text" oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"' required="" placeholder="Nhập môn"></p></label>
+        <label><p>Số điện thoại: <input type="number" oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"' required="" placeholder="Nhập số điện thoại"></p></label>
+        <label><p>Trong kỳ thi học kì: <input type="text" oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"' required="" placeholder="Nhập học kì"> ngày: <input oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"' type="date" required="" placeholder="Nhập ngày"> vừa qua, em đã tham gia thi hết môn: <input oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"' type="text" required="" placeholder="Nhập môn"> với số điểm như sau: <input type="number" required="" placeholder="Nhập điểm"> điểm.</p></label>
+        <label><p>Kính đề nghị Khoa xem xét chấm phúc khảo cho em bài thi môn: <input type="text" required="" placeholder="Nhập môn"></p></label>
+        <p>Em xin chân thành cảm ơn.</p>
+        <p>Kính đơn,</p>
+        <table class="right" style="border: none; padding-left: 70%">
+			<tr>
+				<th id="r" style="padding-right: 50px"><label><label><p style="text-align:center">Người làm đơn:</p><iframe src="dr.html" width="200" height="100"></iframe></p><input type="text" required="" style="text-align: center;" placeholder="Nhập tên em" oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"'><p style="font-weight: normal"><em>(Ký, ghi rõ họ tên)</em></p></p></label></label></th>
+			</tr>
+		</table>
+        <p style="text-align:center"><button onclick="printPage()">Tải xuống (PDF)</button></p>
+        <a href="index.html">
+            <p style="text-align:center"><button>Quay về</button></p>
+        </a>
+   </body>
+</html>
