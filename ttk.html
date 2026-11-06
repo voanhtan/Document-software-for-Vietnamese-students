@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bản kiểm điểm cá nhân</title>
+		<link href="style.css" type="text/css" rel="stylesheet"/>
+		<script type="text/javascript">
+			function printPage() {
+				window.print();
+			}
+		</script>
+   </head>
+   <body>
+		<p style="text-align:center; font-weight:bold">Cộng hòa xã hội chủ nghĩa Việt Nam</p>
+		<p style="text-align:center">Độc lập - Tự do - Hạnh phúc</p>
+		<p id="tit" style="text-align: center; font-weight:bold; font-size:18pt; background: linear-gradient(90deg, rgb(203, 224, 255) 0%, rgb(122, 175, 255) 100%); border-radius: 16px;">BẢN KIỂM ĐIỂM CÁ NHÂN</p>
+		<label><p style="text-align:center">Kính gửi ban giám hiệu trưởng: <input type="text" oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"' required="" placeholder="Nhập tên hiệu trưởng"></p>
+		</label><label><p style="text-align:center">Đồng kính gửi thầy (cô) chủ nhiệm lớp: <input type="text" required="" placeholder="Nhập lớp"></p>
+		</label><label><p>Tên em là: <input type="text" required="" placeholder="Nhập tên em" oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"'> Là học sinh lớp: <input type="text" required="" placeholder="Nhập lớp"></p>
+		</label><p>Em xin tự nghiêm khắc kiểm điểm nhận lỗi của mình như sau: </p><label><p>Nội dung sự việc: <textarea required="" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' maxlength ="500" placeholder="Trình bày tóm tắt nội dung việc mình gây lỗi và nguyên nhân (tối đa 500 chữ)"></textarea></p>
+		</label><label><p>Em tự nhận thấy lỗi của mình là: <input type="text" placeholder="Lỗi gì viết ra đây" required="" oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"'> gây ảnh hưởng tới lớp và làm thầy (cô) phiền lòng.</p>
+		</label><p>Em xin hứa lần sau sẽ không tái phạm, nếu tái phạm sẽ chịu mọi hình thức kỉ luật của nhà trường và thầy (cô) đề ra.</p>
+		<p>Kính mong được thầy cô xem xét, tha thứ, giúp đỡ để em có thể sửa sai và tiến bộ hơn trong quá trình học tập. Em xin trân trọng cảm ơn!</p>
+		<label><p style="text-align:center"><label><input type="text" id="loca" required="" oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"' placeholder="Nhập địa điểm"></label>, Thời gian: <input id="ca" type="datetime-local" oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"' placeholder="Nhập thời gian"></p>
+		</label>
+		<table class="center" style="border: none">
+			<tr>
+				<th rowspan="2" style="padding-right: 50px"><label><label><p style="text-align:center">Chữ kí học sinh:</p><iframe src="dr.html" width="200" height="100"></iframe></p><input type="text" required="" style="text-align: center;" placeholder="Nhập tên em" oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"'><p style="font-weight: normal"><em>(Ký, ghi rõ họ tên)</em></p></p></label></label></th>
+				<th rowspan="2" style="padding-left: 50px"><label><label><p style="text-align:center">Chữ kí phụ huynh: <p><iframe src="dr.html" width="200" height="100"></iframe></p><input type="text" required="" style="text-align: center;" placeholder="Nhập tên phụ huynh" oninput='this.style.width = "";this.style.width = this.scrollWidth + "px"'><p style="font-weight: normal"><em>(Ký, ghi rõ họ tên)</em></p></p></label></label></th>
+			</tr>
+		</table>
+		<p style="text-align:center"><button onclick="printPage()">Tải xuống (PDF)</button></p>
+		<a href="index.html">
+            <p style="text-align:center"><button>Quay về</button></p>
+        </a>
+	</body>
+</html>

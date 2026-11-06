@@ -1,0 +1,144 @@
+::selection {background-color: rgb(145, 193, 255);}
+body {
+    font-family: "system-ui";
+    font-size: 12pt;
+    color: black;
+    background-color: rgb(230, 238, 255);
+}    
+
+input:focus {
+    background-color: white;
+    outline: none;
+    border: rgb(66, 66, 201) solid 2px;
+}
+
+input {
+    font-family: "system-ui";
+    font-size: 12pt;
+    border: 0px;
+    width: 100px;
+    height: auto;
+    background-color: rgb(230, 238, 255);
+    border: 1px solid rgb(95, 95, 95);
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    height: 20px;
+}
+#ca {
+    width: 150px;
+}
+
+button:hover {background-color: rgb(0, 72, 228); cursor:pointer;}
+button:active {background-color: rgb(0, 76, 240); box-shadow: none;}
+button {
+    font-family: "system-ui";
+    background-color: rgb(0, 68, 216);
+    color: white;
+    border: 0px;
+    font-size: 12pt;
+    border-radius: 50px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 10px;
+    box-shadow: 1px 1px 1px #a7a7a7;
+    }
+
+textarea:focus {background-color: white;}
+textarea {
+    font-family: "system-ui";
+    display: inline-flex;
+    font-size: 12pt;
+    border: 0px;
+    width: 80%;
+    height: fit-content;
+    background-color: rgb(230, 238, 255);
+    border: 1px solid rgb(95, 95, 95);
+    border-radius: 5px;
+    padding-left: 6px;
+    padding-top: 6px;
+}
+
+canvas  {
+    border: 0px;
+    cursor:pointer;
+    -webkit-user-select: none;
+}
+
+iframe:hover {background-color: white;}
+iframe {
+    background-color: rgb(230, 238, 255);
+    border: 1px solid rgb(95, 95, 95);
+    border-radius: 5px;
+}
+
+mark {
+    background-color: rgb(255, 255, 127);
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media print {
+    body{
+        background-color: white;
+        color: black;
+        font-family: "times new roman";
+        font-size: 12pt;
+    }
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p {
+        color: black;
+        font-family: "times new roman";
+        font-size: 12pt;
+        background-color: white;
+        padding: 0px;
+        height: 1;
+    }
+    textarea {
+        font-family: "times new roman";
+        font-size: 12pt;
+        border: 0px;
+        width: 100%;
+        height: fit-content;
+        background-color: white;
+        box-shadow: none;
+        border-radius: 0px;
+        place-content: left;
+        padding-left: 0px;
+    }
+    input {
+        font-family: "times new roman";
+        font-size: 12pt;
+        border: 0px;
+        background-color: white;
+        box-shadow: none;
+        border-radius: 0px;
+        padding: 0px;
+        margin: 0px;
+        width: fit-content;
+    }
+    iframe {
+        border: 0px;
+        box-shadow: none;
+        border-radius: 0px;
+    }
+    button {
+        visibility: hidden;
+    }
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        display: none;
+    }
+    textarea {
+        resize: none;
+    }
+    #loca {
+        text-align: right;
+    }
+}
